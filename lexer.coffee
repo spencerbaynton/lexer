@@ -1,11 +1,25 @@
 definitions =
-	identifier:        { regexp: /^[a-zA-Z]+[a-zA-Z0-9]*$/, skip: false },
-	string:            { regexp: /^\"[^\"]*\"|\'[^\']*\'$/, skip: false },
-	decimal_integer:   { regexp: /^[1-9]*\d+$/,             skip: false },
-	left_parenthesis:  { regexp: /^\($/,                    skip: false },
-	right_parenthesis: { regexp: /^\)$/,                    skip: false },
-	comma:             { regexp: /^,$/,                     skip: false },
-	whitespace:        { regexp: /^[\t \n]$/,               skip: true  }
+	identifier:
+		regexp: /^[a-zA-Z]+[a-zA-Z0-9]*$/
+		skip: false
+	string:
+		regexp: /^\"[^\"]*\"|\'[^\']*\'$/
+		skip: false
+	decimal_integer:
+		regexp: /^[1-9]*\d+$/
+		skip: false
+	left_parenthesis:
+		regexp: /^\($/
+		skip: false
+	right_parenthesis:
+		regexp: /^\)$/
+		skip: false
+	comma:
+		regexp: /^,$/
+		skip: false
+	whitespace:
+		regexp: /^[\t \n]$/
+		skip: true
 
 class Lexer
 
